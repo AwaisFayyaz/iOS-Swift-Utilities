@@ -9,6 +9,11 @@
 import UIKit
 import Lottie
 extension UIViewController {
+    
+    func clearBackButtonText() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+    }
   func showAlert(title :String?, message :String?, okButtonTitle :String?, callback: ( ()->() )? = nil) {
     
     DispatchQueue.main.async {
